@@ -1,0 +1,16 @@
+{
+  "name": "rocketseat-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:danilo-righetto/rocketseat-starter.git",
+  "author": "Danilo Righetto <drighetto@allin.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o bundle.js"
+  }
+}

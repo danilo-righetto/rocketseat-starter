@@ -58,6 +58,27 @@ In this project we will use `mongodb` with `atlas`
 ## Course - JavaScript ES6
 
 Project Initialization:
+- Just run the command below
+
+``` sh
+$ yarn init -y
+```
+
+Dependencies:
+Adding `babel` to the project
+``` sh
+$ yarn add @babel/cli
+```
+
+Adding `preset-env` to the project
+``` sh
+$ yarn add @babel/preset-env
+```
+
+Adding `core` to the project
+``` sh
+$ yarn add @babel/core
+```
 
 ### About project
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
