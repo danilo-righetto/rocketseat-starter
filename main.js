@@ -87,3 +87,17 @@ const find = arr.find(function(item){
 
 console.log('FIND', find);
 
+/* Trabalhando com Arrow Functions */
+const myArrFun = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const testArr = myArrFun.map(item => item * 2);
+
+console.log('ARROW FUNCTION', testArr);
+
+const teste = () => {
+  return 'teste';
+};
+
+const test2 = () => ({ name: 'Vitrine' });
+
+console.log('ARROW FUNCTION - TEST', teste, test2);

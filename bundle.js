@@ -133,3 +133,22 @@ var find = arr.find(function (item) {
   return item === 4;
 });
 console.log('FIND', find);
+/* Trabalhando com Arrow Functions */
+
+var myArrFun = [1, 2, 3, 4, 5, 6, 7, 8];
+var testArr = myArrFun.map(function (item) {
+  return item * 2;
+});
+console.log('ARROW FUNCTION', testArr);
+
+var teste = function teste() {
+  return 'teste';
+};
+
+var test2 = function test2() {
+  return {
+    name: 'Vitrine'
+  };
+};
+
+console.log('ARROW FUNCTION - TEST', teste, test2);
