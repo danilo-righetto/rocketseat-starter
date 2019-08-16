@@ -57,3 +57,33 @@ const usuario = { nome: 'Danilo'};
 usuario.nome = 'Ricardo'; // Essa mutação é valida
 
 console.log('Usuario - Const & Let', usuario);
+
+
+/* Operações em Vetores */
+const arr = [1, 3, 4, 5, 8, 9];
+
+const newArr = arr.map(function(item, index) {
+  return item * index;
+});
+
+console.log('Vetor - arr', newArr);
+
+const sum = arr.reduce(function(total, next){
+  return total + next;
+});
+
+console.log('REDUCE', sum);
+
+/* Fazendo um 'FILTER' no Javascript */
+const filter = arr.filter(function(item) {
+  // Retorna o número do vetor se uma condição for verdadeira
+  return item % 2 === 0;
+});
+
+/* 'FIND' verificar se existe alguma informação dentro do array */
+const find = arr.find(function(item){
+  return item === 4;
+});
+
+console.log('FIND', find);
+
