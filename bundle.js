@@ -246,3 +246,8 @@ var dog2 = _objectSpread({}, dog, {
 });
 
 console.log('SPREAD - Object', dog2);
+/* Template Literals */
+
+var nameTemplate = 'Diego';
+var idadeTemplate = 23;
+console.log('TEMPLATE LITERALS', "Meu nome \xE9 ".concat(nameTemplate, " e tenho ").concat(idadeTemplate));

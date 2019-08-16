@@ -175,3 +175,9 @@ const dog = {
 const dog2 = { ...dog, name: 'Tody' }
 
 console.log('SPREAD - Object', dog2);
+
+/* Template Literals */
+const nameTemplate = 'Diego';
+const idadeTemplate = 23;
+
+console.log('TEMPLATE LITERALS', `Meu nome é ${nameTemplate} e tenho ${idadeTemplate}`);
