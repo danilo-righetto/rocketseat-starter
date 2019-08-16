@@ -80,6 +80,11 @@ Adding `core` to the project
 $ yarn add @babel/core
 ```
 
+Adding `plugin-proposal-object-rest-spread` to the project
+``` sh
+$ yarn add @babel/plugin-proposal-object-rest-spread
+```
+
 ### About project
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
 

@@ -131,3 +131,47 @@ function mostraNome({ nome }){
 }
 
 mostraNome(usuarioDes);
+
+/* Operadores REST/SPREAD */
+
+// REST - pega o resto das propriedades
+
+const client = {
+  name: 'Danilo',
+  age: 25,
+  company: 'Dan-tech'
+};
+
+const { name, ...resto } = client;
+console.log('REST - SPREAD', name);
+console.log('REST - SPREAD - resto', resto);
+
+const restArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const [ b, ...c ] = restArr;
+
+console.log('REST - SPREAD - array - b', b);
+console.log('REST - SPREAD - array - c', c); // Essa variavel ficou com o resto dos valores restantes
+
+function sumRest(...params) {
+  return params.reduce((total, next) => total + next);
+}
+
+console.log('REST - SPREAD - sumRest', sumRest(2, 5, 6));
+
+/* SPREAD - Propagador, repassa as informações de um objeto ou array para outra estrutura de dados */
+const arr001 = [1, 2, 3, 4, 5];
+const arr002 = [6, 7, 8, 9, 10];
+
+const arr003 = [ ...arr001, ...arr002 ];
+
+console.log('SPREAD', arr003);
+
+const dog = {
+  name: 'max',
+  age: 4,
+  weight: 14
+}
+
+const dog2 = { ...dog, name: 'Tody' }
+
+console.log('SPREAD - Object', dog2);
