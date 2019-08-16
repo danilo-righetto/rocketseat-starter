@@ -101,3 +101,9 @@ const teste = () => {
 const test2 = () => ({ name: 'Vitrine' });
 
 console.log('ARROW FUNCTION - TEST', teste, test2);
+
+/* Valores Padrão */
+const soma = (a = 2, b = 3) => a + b; // Soma em forma de Arrow Function
+
+console.log('VALORES PADRAO - PART 1', soma(1));
+console.log('VALORES PADRAO - PART 2',soma());

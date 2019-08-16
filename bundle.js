@@ -152,3 +152,14 @@ var test2 = function test2() {
 };
 
 console.log('ARROW FUNCTION - TEST', teste, test2);
+/* Valores Padrão */
+
+var soma = function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
+  return a + b;
+}; // Soma em forma de Arrow Function
+
+
+console.log('VALORES PADRAO - PART 1', soma(1));
+console.log('VALORES PADRAO - PART 2', soma());
