@@ -48,3 +48,12 @@ class Matematica {
 }
 
 Matematica.soma(25, 25);
+
+/* Const & Let */
+const a = 1; // Não podemos reatribuir um valor a uma variavel
+
+const usuario = { nome: 'Danilo'};
+
+usuario.nome = 'Ricardo'; // Essa mutação é valida
+
+console.log('Usuario - Const & Let', usuario);
