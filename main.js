@@ -107,3 +107,27 @@ const soma = (a = 2, b = 3) => a + b; // Soma em forma de Arrow Function
 
 console.log('VALORES PADRAO - PART 1', soma(1));
 console.log('VALORES PADRAO - PART 2',soma());
+
+/* Desestruturação */
+const usuarioDes = {
+  nome: 'Danilo',
+  idade: 25,
+  endereco: {
+    cidade: 'Sao Paulo',
+    estado: 'Sao Paulo'
+  }
+};
+
+console.log('DESESTRUTURAÇÃO', usuarioDes);
+
+const { nome, idade, endereco: { cidade } } = usuarioDes;
+console.log('DESESTRUTURAÇÃO - nome', nome);
+console.log('DESESTRUTURAÇÃO - idade', idade);
+console.log('DESESTRUTURAÇÃO - cidade', cidade);
+
+/* DESESTRUTURAÇÃO COM FUNCTION */
+function mostraNome({ nome }){
+  console.log('MOSTRA NOME', nome);
+}
+
+mostraNome(usuarioDes);

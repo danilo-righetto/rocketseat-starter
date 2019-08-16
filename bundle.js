@@ -163,3 +163,28 @@ var soma = function soma() {
 
 console.log('VALORES PADRAO - PART 1', soma(1));
 console.log('VALORES PADRAO - PART 2', soma());
+/* Desestruturação */
+
+var usuarioDes = {
+  nome: 'Danilo',
+  idade: 25,
+  endereco: {
+    cidade: 'Sao Paulo',
+    estado: 'Sao Paulo'
+  }
+};
+console.log('DESESTRUTURAÇÃO', usuarioDes);
+var nome = usuarioDes.nome,
+    idade = usuarioDes.idade,
+    cidade = usuarioDes.endereco.cidade;
+console.log('DESESTRUTURAÇÃO - nome', nome);
+console.log('DESESTRUTURAÇÃO - idade', idade);
+console.log('DESESTRUTURAÇÃO - cidade', cidade);
+/* DESESTRUTURAÇÃO COM FUNCTION */
+
+function mostraNome(_ref) {
+  var nome = _ref.nome;
+  console.log('MOSTRA NOME', nome);
+}
+
+mostraNome(usuarioDes);
