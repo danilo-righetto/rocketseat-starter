@@ -5,13 +5,17 @@
   "repository": "git@github.com:danilo-righetto/rocketseat-starter.git",
   "author": "Danilo Righetto <drighetto@allin.com.br>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-    "@babel/preset-env": "^7.5.5"
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
   },
   "scripts": {
-    "dev": "babel ./main.js -o bundle.js -w"
+    "dev": "babel ./main.js -o bundle.js -w",
+    "dev-web": "webpack --mode=development -w"
   }
 }

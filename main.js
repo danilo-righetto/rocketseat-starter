@@ -1,3 +1,4 @@
+import { somaFunc } from './funcoes';
 class List {
   constructor() {
     this.data = [];
@@ -196,3 +197,6 @@ const usuarioOSS = {
 };
 
 console.log('Object Short Syntax', usuarioOSS);
+
+/* WEBPACK */
+console.log('WEBPACK - PART 1', somaFunc(2, 3));

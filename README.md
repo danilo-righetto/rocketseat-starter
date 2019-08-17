@@ -85,6 +85,21 @@ Adding `plugin-proposal-object-rest-spread` to the project
 $ yarn add @babel/plugin-proposal-object-rest-spread
 ```
 
+Adding `webpack webpack-cli` to the project
+``` sh
+$ yarn add webpack webpack-cli -D
+```
+
+Adding `babel-loader` to the project
+``` sh
+$ yarn add babel-loader -D
+```
+
+Adding `babel-loader@8.0.0-beta.0` to the project
+``` sh
+$ yarn add babel-loader@8.0.0-beta.0 -D
+```
+
 ### About project
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
 
