@@ -1,4 +1,6 @@
-import { somaFunc } from './funcoes';
+import { somaFunc, subFunc, div as dvision } from './funcoes';
+import somaExemplo from './soma';
+import * as funcoes from './funcoes';
 class List {
   constructor() {
     this.data = [];
@@ -200,3 +202,15 @@ console.log('Object Short Syntax', usuarioOSS);
 
 /* WEBPACK */
 console.log('WEBPACK - PART 1', somaFunc(2, 3));
+
+/* IMPORT/EXPORT */
+console.log('WEBPACK - PART 1', subFunc(6, 3));
+
+console.log('WEBPACK - PART 2 - somaExemplo', somaExemplo(6, 3));
+
+console.log('WEBPACK - PART 2 - dvision', dvision(6, 3));
+
+console.log('WEBPACK - PART 2 - funcoes', funcoes);
+
+/* Webpack dev server */
+alert('Opa!');

@@ -100,6 +100,11 @@ Adding `babel-loader@8.0.0-beta.0` to the project
 $ yarn add babel-loader@8.0.0-beta.0 -D
 ```
 
+Adding `webpack-dev-server` to the project
+``` sh
+$ yarn add webpack-dev-server -D
+```
+
 ### About project
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
 
