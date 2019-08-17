@@ -251,3 +251,17 @@ console.log('SPREAD - Object', dog2);
 var nameTemplate = 'Diego';
 var idadeTemplate = 23;
 console.log('TEMPLATE LITERALS', "Meu nome \xE9 ".concat(nameTemplate, " e tenho ").concat(idadeTemplate));
+/* Object Short Syntax */
+
+var nameOSS = 'Danilo';
+var idadeOSS = 25;
+/*  Quando o nome da variavel é igual ao nome da propriedade que será passada não é 
+    necessário defini-la, basta deixar uma delas no objeto
+*/
+
+var usuarioOSS = {
+  nameOSS: nameOSS,
+  idadeOSS: idadeOSS,
+  company: 'Rocketseat'
+};
+console.log('Object Short Syntax', usuarioOSS);

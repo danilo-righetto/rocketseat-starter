@@ -181,3 +181,18 @@ const nameTemplate = 'Diego';
 const idadeTemplate = 23;
 
 console.log('TEMPLATE LITERALS', `Meu nome é ${nameTemplate} e tenho ${idadeTemplate}`);
+
+/* Object Short Syntax */
+const nameOSS = 'Danilo';
+const idadeOSS = 25;
+
+/*  Quando o nome da variavel é igual ao nome da propriedade que será passada não é 
+    necessário defini-la, basta deixar uma delas no objeto
+*/
+const usuarioOSS = {
+  nameOSS,
+  idadeOSS,
+  company: 'Rocketseat'
+};
+
+console.log('Object Short Syntax', usuarioOSS);
