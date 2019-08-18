@@ -214,3 +214,23 @@ console.log('WEBPACK - PART 2 - funcoes', funcoes);
 
 /* Webpack dev server */
 alert('Opa!');
+
+/* Async/await */
+const minhaPromisse = () => new Promise((resolve, reject) => {
+  setTimeout(() => { resolve('Ok') }, 2000);
+});
+
+minhaPromisse().then(response => {
+  console.log('MINHA PROMISE', response);
+}).catch(err => {
+  console.log('MINHA PROMISE - ERROR', err);
+});
+
+// Usando o ASYNC/AWAIT
+
+async function executaPromise() {
+  const response = await minhaPromisse();
+  console.log('EXECUTA PROMISSE', response);
+}
+
+executaPromise();

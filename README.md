@@ -105,6 +105,16 @@ Adding `webpack-dev-server` to the project
 $ yarn add webpack-dev-server -D
 ```
 
+Adding `plugin-transform-async-to-generator` to the project
+``` sh
+$ yarn add @babel/plugin-transform-async-to-generator -D
+```
+
+Adding `polyfill` to the project
+``` sh
+$ yarn add @babel/polyfill -D
+```
+
 ### About project
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
 
