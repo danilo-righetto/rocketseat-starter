@@ -40,7 +40,7 @@ let MinhaLista = new TodoList();
 
 document.getElementById('novotodo').onclick = function () {
   MinhaLista.add('Novo todo');
-}
+};
 
 MinhaLista.mostraUsuario();
 
@@ -249,3 +249,29 @@ class Api {
 }
 
 Api.getUserInfo('danilo-righetto');
+
+/* Adicionar repositórios */
+class App {
+  constructor() {
+    this.repositories = [];
+    this.formEl = document.getElementById('repo-form');
+    this.registerHandlers();
+  }
+
+  registerHandlers() {
+    this.formEl.onsubmit = event => this.addRepository(event);
+  }
+
+  addRepository (event) {
+    event.preventDefault();
+    this.repositories.push({
+      name: 'danilo-righetto',
+      description: 'Danilo Righetto - Analista de Sistemas',
+      avatar_url: 'https://avatars0.githubusercontent.com/u/28929274?v=4',
+      html_url: 'https://avatars0.githubusercontent.com/u/28929274?v=4'
+    });
+    console.log('addRepository', this.repositories);
+  }
+}
+
+new App();
