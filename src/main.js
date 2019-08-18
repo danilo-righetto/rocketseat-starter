@@ -1,6 +1,7 @@
 import { somaFunc, subFunc, div as dvision } from './funcoes';
 import somaExemplo from './soma';
 import * as funcoes from './funcoes';
+import axios from 'axios';
 class List {
   constructor() {
     this.data = [];
@@ -213,7 +214,7 @@ console.log('WEBPACK - PART 2 - dvision', dvision(6, 3));
 console.log('WEBPACK - PART 2 - funcoes', funcoes);
 
 /* Webpack dev server */
-alert('Opa!');
+// alert('Opa!');
 
 /* Async/await */
 const minhaPromisse = () => new Promise((resolve, reject) => {
@@ -234,3 +235,17 @@ async function executaPromise() {
 }
 
 executaPromise();
+
+/* Configurando axios */
+class Api {
+  static async getUserInfo(username) {
+    try {
+      const response = await axios.get(`https://api.github.com/users/${username}`);
+      console.log('getUserInfo', response);
+    } catch (error) {
+      console.warn('getUserInfo - error', error);
+    }
+  }
+}
+
+Api.getUserInfo('danilo-righetto');

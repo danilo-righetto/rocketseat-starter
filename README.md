@@ -115,6 +115,11 @@ Adding `polyfill` to the project
 $ yarn add @babel/polyfill -D
 ```
 
+Adding `axios` to the project
+``` sh
+$ yarn add axios
+```
+
 ### About project
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
 
