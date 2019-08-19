@@ -265,27 +265,47 @@ class App {
     this.formEl.onsubmit = event => this.addRepository(event);
   }
 
+  setLoading(loading = true) {
+    if (loading = true) {
+      let loadingEl = document.createElement('span');
+      loadingEl.appendChild(document.createTextNode('Carregando ...'));
+      loadingEl.setAttribute('id', 'loading');
+
+      this.formEl.appendChild(loadingEl);
+    } else {
+      document.getElementById('loading').remove();
+    }
+  }
+
   async addRepository (event) {
     event.preventDefault();
     const repoInput = this.inputEl.value;
     if (repoInput.length == 0) return;
 
-    const response = await apiApp.get(`/repos/${repoInput}`);
-    console.log('addRepository - test', response);
+    this.setLoading();
 
-    const { name, description, html_url, owner: { avatar_url } } = response.data;
+    try {
+      const response = await apiApp.get(`/repos/${repoInput}`);
+      console.log('addRepository - test', response);
 
-    this.repositories.push({
-      name,
-      description,
-      avatar_url,
-      html_url
-    });
+      const { name, description, html_url, owner: { avatar_url } } = response.data;
 
-    this.inputEl.value = '';
+      this.repositories.push({
+        name,
+        description,
+        avatar_url,
+        html_url
+      });
 
-    this.render();
-    console.log('addRepository', this.repositories);
+      this.inputEl.value = '';
+
+      this.render();
+      console.log('addRepository', this.repositories);
+    } catch (error) {
+      alert('O repositório não existe', error);
+    }
+
+    this.setLoading(false);
   }
 
   render() {
