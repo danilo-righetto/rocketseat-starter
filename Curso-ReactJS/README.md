@@ -1,4 +1,4 @@
-# Course - Rocketseat Starter - Javascript
+# Course - Rocketseat Starter - React JS
 Rocketseat is a developer education platform focused on new technologies.
 
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
@@ -55,13 +55,19 @@ Settings
 In this project we will use `mongodb` with `atlas`
 - See more: [Mongodb Atlas](https://www.mongodb.com/cloud/atlas)
 
-## Course - JavaScript
+## Course - React JS
 
 Project Initialization:
 - Just run the command below
 
 ``` sh
 $ yarn init -y
+```
+
+Dependencies:
+Adding `babel` to the project
+``` sh
+$ yarn add @babel/cli
 ```
 
 ### About project
