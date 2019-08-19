@@ -1,14 +1,20 @@
-# Course - Rocketseat Starter
+# Course - Rocketseat Starter - Javascript
 Rocketseat is a developer education platform focused on new technologies.
 
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
 
-## Courses
- - Javascript ES6: `COMPLETE`
- - Javascript: `IN PROGRESS`
- - NodeJS: `IN PROGRESS`
- - ReactJS: `IN PROGRESS`
- - React Native: `IN PROGRESS`
+## Installation
+Installation of `NODEJS`
+``` sh
+$ sudo apt-get install nodejs
+```
+
+Installation of `YARN`
+``` sh
+$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+$ sudo apt-get update && sudo apt-get install yarn
+```
 
 ## IDE
 Visual Studio Code - [Download](https://code.visualstudio.com/Download)
@@ -44,6 +50,25 @@ Settings
 ## Tools
 - [INSOMNIA](https://support.insomnia.rest/article/23-installation#ubuntu)
 - [MONGODB COMPASS](https://www.mongodb.com/products/compass)
+
+## Database
+In this project we will use `mongodb` with `atlas`
+- See more: [Mongodb Atlas](https://www.mongodb.com/cloud/atlas)
+
+## Course - JavaScript
+
+Project Initialization:
+- Just run the command below
+
+``` sh
+$ yarn init -y
+```
+
+Dependencies:
+Adding `babel` to the project
+``` sh
+$ yarn add @babel/cli
+```
 
 ### About project
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
