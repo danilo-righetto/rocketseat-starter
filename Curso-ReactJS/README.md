@@ -16,6 +16,12 @@ $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sour
 $ sudo apt-get update && sudo apt-get install yarn
 ```
 
+To execute "npm" with your user execute the commands below:
+``` sh
+$ sudo chown -R $(whoami) ~/.npm
+$ sudo chown -R $(whoami) /usr/local/lib/node_modules
+```
+
 ## IDE
 Visual Studio Code - [Download](https://code.visualstudio.com/Download)
 
@@ -59,15 +65,14 @@ In this project we will use `mongodb` with `atlas`
 
 Project Initialization:
 - Just run the command below
-
 ``` sh
-$ yarn init -y
+$ npm install -g create-react-app
+$ create-react-app huntweb
 ```
 
-Dependencies:
-Adding `babel` to the project
+To run the project use:
 ``` sh
-$ yarn add @babel/cli
+$ npm start
 ```
 
 ### About project
