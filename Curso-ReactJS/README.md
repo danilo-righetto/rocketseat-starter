@@ -81,6 +81,11 @@ Adding `axios` to the project
 $ yarn add axios
 ```
 
+Adding `react-router-dom` to the project
+``` sh
+$ yarn add react-router-dom
+```
+
 ### About project
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
 
