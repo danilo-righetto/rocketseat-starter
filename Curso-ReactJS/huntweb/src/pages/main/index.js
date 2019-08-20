@@ -23,11 +23,18 @@ export default class Main extends Component {
 
   // O render pode depender do 'state' (Estado) da aplicação
   render() {
+    const { products } = this.state;
     return (
       <div className="product-list">
         <h1>Main - Contagem de produtos: {this.state.products.length}</h1>;
-        {this.state.products.map(product => (
-          <h2 key={product._id}>{product.title}</h2>
+        {products.map(product => (
+          // <h2 key={product._id}>{product.title}</h2>
+          <article key={product._id}>
+            <strong>{product.title}</strong>
+            <p>{product.description}</p>
+
+            <a href="">Acessar</a>
+          </article>
         ))}
       </div>
     );
