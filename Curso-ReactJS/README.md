@@ -1,7 +1,9 @@
 # Course - Rocketseat Starter - React JS
 Rocketseat is a developer education platform focused on new technologies.
-
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
+
+## Status
+> Status: `COMPLETE`
 
 ## Installation
 Installation of `NODEJS`
