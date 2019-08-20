@@ -75,6 +75,12 @@ To run the project use:
 $ npm start
 ```
 
+Dependencies:
+Adding `axios` to the project
+``` sh
+$ yarn add axios
+```
+
 ### About project
 See more: [Rocketseat Starter](https://rocketseat.com.br/)
 
