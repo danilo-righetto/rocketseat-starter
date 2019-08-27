@@ -80,6 +80,12 @@ Adding `nodemon` to the project
 $ npm install nodemon
 ```
 
+Dependencies:
+Adding `mongoose` to the project
+``` sh
+$ npm install mongoose
+```
+
 ## Docker
 To use "mongodb" run the following commands:
 ``` sh
